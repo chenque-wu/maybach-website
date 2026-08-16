@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梅赛德斯-迈巴赫 · 至臻豪华，礼待天下</title>
+<meta name="description" content="梅赛德斯-迈巴赫概念宣传页 —— 以礼为尊，一脉相承。设计演示作品。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230a0a0b'/%3E%3Cg fill='none' stroke='%23c6a664' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22 L12 44 M12 44 L26 29 M38 29 L26 29 M38 29 L38 44'/%3E%3Cpath d='M20 22 L20 44 M20 44 L34 29 M46 29 L34 29 M46 29 L46 44' opacity='0.4'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@200;300;400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.preloader{display:none}.site-head{opacity:1}.scroll-cue{opacity:1}.story-block{opacity:1;transform:none}.feature-list li{opacity:1;transform:none}.model-card{opacity:1;transform:none}.hero-title .char{opacity:1;transform:none}.hero-eyebrow,.hero-sub,.hero-actions .btn{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+<!-- 加载进度条 -->
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- 全站光尘 -->
+<div class="global-dust" id="globalDust" aria-hidden="true"></div>
+
+<!-- 颗粒质感层 -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- 自定义光标 -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-label">VIEW</span></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ═══════════ 开场遮罩 ═══════════ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-count" id="preCount">0</div>
+    <div class="pre-title" id="preTitle">MAYBACH</div>
+    <div class="pre-words" id="preWords">至臻豪华</div>
+    <div class="pre-line"><span class="pre-fill" id="preFill"></span></div>
+  </div>
+  <div class="pre-curtain pre-curtain-l" id="preCurtainL"></div>
+  <div class="pre-curtain pre-curtain-r" id="preCurtainR"></div>
+</div>
+
+<!-- ═══════════ 导航 ═══════════ -->
+<header class="site-head" id="siteHead">
+  <div class="head-inner">
+    <a class="brand" href="#top" data-lenis>
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M6 20 L6 46 M6 46 L22 28 M38 28 L22 28 M38 28 L38 46 M54 20 L54 46 M54 46 L38 28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+        <path d="M11 20 L11 46 M11 46 L27 28 M43 28 L27 28 M43 28 L43 46 M59 20 L59 46 M59 46 L43 28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+      </svg>
+      <span class="brand-name">梅赛德斯-迈巴赫<span class="brand-en">MERCEDES-MAYBACH</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#heritage" data-lenis>传承</a>
+      <a href="#craft" data-lenis>匠心</a>
+      <a href="#cabin" data-lenis>座舱</a>
+      <a href="#models" data-lenis>车型</a>
+      <a href="#specs" data-lenis>参数</a>
+      <a href="#bespoke" data-lenis>定制</a>
+    </nav>
+    <a class="head-cta" href="https://www.mercedes-benz.com.cn/vehicles/sedan/maybach-s-class.html" target="_blank" rel="noopener">官方预约</a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-media" id="heroMedia">
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide is-on" data-slide="0">
+        <div class="hero-img-wrap"><img class="hero-img" src="assets/img/hero.jpg" alt="梅赛德斯-迈巴赫 S 680 曜岩黑"></div>
+      </div>
+      <div class="hero-slide" data-slide="1">
+        <div class="hero-img-wrap"><img class="hero-img" src="assets/img/model-gls.jpg" alt="梅赛德斯-迈巴赫 GLS 600"></div>
+      </div>
+      <div class="hero-slide" data-slide="2">
+        <div class="hero-img-wrap"><img class="hero-img" src="assets/img/model-eqs.jpg" alt="梅赛德斯-迈巴赫 EQS 680 SUV"></div>
+      </div>
+    </div>
+    <div class="hero-shade"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-sweep" aria-hidden="true"></div>
+    <div class="hero-dust" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero-watermark" id="heroWm" aria-hidden="true"><span>MAYBACH</span></div>
+
+  <!-- Hero 车型轮播控制 -->
+  <div class="carousel" id="carousel">
+    <div class="carousel-info">
+      <span class="car-index" id="carIndex">01</span>
+      <div class="car-name" id="carName">迈巴赫 S 680 4MATIC</div>
+      <div class="car-spec" id="carSpec">6.0T V12 · 612 PS · ¥ 3,327,000 起</div>
+    </div>
+    <div class="carousel-controls">
+      <button class="car-btn" id="carPrev" aria-label="上一款">←</button>
+      <div class="car-dots" id="carDots">
+        <button class="car-dot is-on" data-i="0" aria-label="第 1 款"></button>
+        <button class="car-dot" data-i="1" aria-label="第 2 款"></button>
+        <button class="car-dot" data-i="2" aria-label="第 3 款"></button>
+      </div>
+      <button class="car-btn" id="carNext" aria-label="下一款">→</button>
+    </div>
+  </div>
+
+  <div class="hero-content" id="heroContent">
+    <p class="eyebrow hero-eyebrow">MERCEDES-MAYBACH · EST. 1909</p>
+    <h1 class="hero-title" id="heroTitle">
+      <span class="ht-line">至臻豪华</span>
+      <span class="ht-line gold-text">礼待天下</span>
+    </h1>
+    <p class="hero-sub">The Ultimate in Luxury —— 以百年匠心，以礼相待。</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold magnetic" href="https://www.mercedes-benz.com.cn/vehicles/sedan/maybach-s-class.html" target="_blank" rel="noopener">官方预约</a>
+      <a class="btn btn-ghost magnetic" href="#heritage" data-lenis>探索之旅</a>
+    </div>
+  </div>
+
+  <div class="hero-meta" aria-hidden="true">
+    <span>V12</span><span class="dot"></span><span>EST. 1909</span><span class="dot"></span><span>MANUFAKTUR</span>
+  </div>
+
+  <a class="scroll-cue" href="#heritage" data-lenis aria-label="向下滚动">
+    <span class="cue-line"></span>
+    <span class="cue-text">SCROLL</span>
+  </a>
+</section>
+
+<!-- ═══════════ 无限跑马灯 ═══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="mq-item">MAYBACH</span><span class="mq-dot">◆</span>
+    <span class="mq-item">至臻豪华</span><span class="mq-dot">◆</span>
+    <span class="mq-item">HANDCRAFTED</span><span class="mq-dot">◆</span>
+    <span class="mq-item">礼待天下</span><span class="mq-dot">◆</span>
+    <span class="mq-item">MAYBACH</span><span class="mq-dot">◆</span>
+    <span class="mq-item">至臻豪华</span><span class="mq-dot">◆</span>
+    <span class="mq-item">HANDCRAFTED</span><span class="mq-dot">◆</span>
+    <span class="mq-item">礼待天下</span><span class="mq-dot">◆</span>
+  </div>
+</div>
+
+<!-- ═══════════ 传承 ═══════════ -->
+<section class="section story" id="heritage">
+  <div class="story-inner container">
+    <div class="story-head">
+      <p class="eyebrow">01 —— 传承</p>
+      <h2 class="story-title" data-parallax-title>以礼为尊，<span class="gold-text">一脉相承</span></h2>
+    </div>
+    <div class="story-body">
+      <article class="story-block">
+        <figure class="story-figure">
+          <img src="assets/img/s580-green.jpg" alt="迈巴赫 S 级双色车身">
+          <span class="sb-year">1909</span>
+        </figure>
+        <div class="story-copy">
+          <h3>匠心之始</h3>
+          <p>威廉·迈巴赫，这位被誉为"汽车设计之王"的匠人，以对机械与美学的极致苛求，种下品牌的种子。</p>
+        </div>
+      </article>
+      <article class="story-block">
+        <figure class="story-figure">
+          <img src="assets/img/story-s680.jpg" alt="迈巴赫 S 680 曜岩黑">
+          <span class="sb-year">1921 — 1929</span>
+        </figure>
+        <div class="story-copy">
+          <h3>齐柏林之巅</h3>
+          <p>首款量产车 W3 于柏林车展亮相，V12 引擎登峰造极，被欧洲上流社会称为"德国的劳斯莱斯"。</p>
+        </div>
+      </article>
+      <article class="story-block">
+        <figure class="story-figure">
+          <img src="assets/img/story-gls.jpg" alt="迈巴赫 GLS 600">
+          <span class="sb-year">2014 — 2020</span>
+        </figure>
+        <div class="story-copy">
+          <h3>双星并耀</h3>
+          <p>迈巴赫归入梅赛德斯-奔驰，以"梅赛德斯-迈巴赫"之名重生；全新 S 级与 GLS 联袂登场，以礼为尊。</p>
+        </div>
+      </article>
+      <article class="story-block">
+        <figure class="story-figure">
+          <img src="assets/img/story-eqs2.jpg" alt="迈巴赫 EQS 680 SUV 曜岩黑">
+          <span class="sb-year">2023</span>
+        </figure>
+        <div class="story-copy">
+          <h3>纯电启程</h3>
+          <p>迈巴赫 EQS SUV 问世——至臻豪华进入电动纪元，而"礼"从未改变。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 匠心 ═══════════ -->
+<section class="section craft" id="craft">
+  <div class="container craft-grid">
+    <div class="craft-visual">
+      <div class="craft-img-wrap">
+        <img class="craft-img" src="assets/img/craft-twotone.jpg" alt="迈巴赫 S 580 双色车身：曜岩黑 × 高科技银">
+      </div>
+      <p class="craft-caption">S 580 · 曜岩黑 × 高科技银双色车身</p>
+    </div>
+    <div class="craft-copy">
+      <header class="section-head">
+        <p class="eyebrow">02 —— 匠心</p>
+        <h2>双色车身<br><span class="gold-text">金线为笔</span></h2>
+      </header>
+      <p class="lead">MANUFAKTUR 匠心高定，是迈巴赫对时间的回答。直瀑式格栅庄严如仪；双色车身由匠人手工喷涂，分界一线，恰似以金线为笔，于车身上再写华章。</p>
+      <ul class="feature-list">
+        <li><span class="f-num">01</span><div><h4>直瀑式格栅</h4><p>专属竖向镀铬格栅，取代横向设计，庄严如仪。</p></div></li>
+        <li><span class="f-num">02</span><div><h4>双色车身</h4><p>腰线之下手工喷涂第二色漆，如华服加身。</p></div></li>
+        <li><span class="f-num">03</span><div><h4>双 M 徽标</h4><p>C 柱之上双 M 交织，与三叉星徽相映成辉。</p></div></li>
+        <li><span class="f-num">04</span><div><h4>玫瑰金细节</h4><p>出风口与饰条以玫瑰金勾勒，温润而不张扬。</p></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 水平画廊 -->
+  <div class="gallery" id="gallery" data-lenis-prevent>
+    <div class="gallery-track" id="galleryTrack">
+      <figure class="g-card"><img src="assets/img/gallery-interior1.jpg" alt="迈巴赫 GLS 600 行政座舱"><figcaption>GLS 600 行政座舱</figcaption></figure>
+      <figure class="g-card"><img src="assets/img/gallery-gls.jpg" alt="迈巴赫 GLS 600"><figcaption>GLS 600 4MATIC</figcaption></figure>
+      <figure class="g-card"><img src="assets/img/gallery-eqs.jpg" alt="迈巴赫 EQS 680"><figcaption>EQS 680 SUV</figcaption></figure>
+      <figure class="g-card"><img src="assets/img/gallery-interior2.jpg" alt="迈巴赫 S 550 奢华内饰"><figcaption>S 550 奢华内饰</figcaption></figure>
+      <figure class="g-card"><img src="assets/img/gallery-s650.jpg" alt="迈巴赫 S 650"><figcaption>S 650 · 匠心高定</figcaption></figure>
+      <figure class="g-card"><img src="assets/img/detail-wheel.jpg" alt="迈巴赫轮毂"><figcaption>专属轮毂</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 座舱 ═══════════ -->
+<section class="section cabin" id="cabin">
+  <div class="container">
+    <header class="section-head center">
+      <p class="eyebrow">03 —— 头等舱</p>
+      <h2>把头等舱<br><span class="gold-text">安放于旅程</span></h2>
+    </header>
+    <div class="cabin-grid">
+      <figure class="cabin-img clip-reveal"><img src="assets/img/interior-1.jpg" alt="迈巴赫内饰：Nappa 双色真皮与钢琴漆饰条"><figcaption>Nappa 真皮 · 钢琴漆饰条</figcaption></figure>
+      <figure class="cabin-img clip-reveal"><img src="assets/img/interior-2.jpg" alt="迈巴赫 S 550 内饰"><figcaption>半苯胺真皮 · 手工缝线</figcaption></figure>
+      <figure class="cabin-img clip-reveal"><img src="assets/img/interior-3.jpg" alt="迈巴赫 GLS 600 内饰"><figcaption>行政座舱 · 玫瑰金饰件</figcaption></figure>
+      <figure class="cabin-img clip-reveal"><img src="assets/img/interior-4.jpg" alt="迈巴赫 SL 680 内饰"><figcaption>仪表工艺 · 头等舱座椅</figcaption></figure>
+    </div>
+    <blockquote class="cabin-quote">
+      <p>于无声处，见天地之宽。</p>
+      <cite>—— 后排静谧座舱，旅途的另一种形态</cite>
+    </blockquote>
+    <ul class="cabin-features">
+      <li>后排行政独立座椅 · 电动腿托</li>
+      <li>折叠小桌板 · 香槟杯座</li>
+      <li>车载冷藏箱 · 后座娱乐系统</li>
+      <li>主动降噪 · 静谧座舱</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ 车型 ═══════════ -->
+<section class="section models" id="models">
+  <div class="container">
+    <header class="section-head center">
+      <p class="eyebrow">04 —— 车型</p>
+      <h2>以礼相待<br><span class="gold-text">各有其道</span></h2>
+    </header>
+    <div class="model-grid">
+      <article class="model-card tilt">
+        <div class="model-photo"><img src="assets/img/model-s680.jpg" alt="迈巴赫 S 680"><span class="model-tag">V12 · 至臻之巅</span></div>
+        <div class="model-info">
+          <h3>迈巴赫 S 680 4MATIC</h3>
+          <ul class="model-specs"><li><span>6.0T V12</span><b>612 PS</b></li><li><span>0–100 km/h</span><b>4.5 s</b></li></ul>
+          <p class="model-price">¥ 3,327,000 起</p>
+          <a class="model-link" href="#specs" data-lenis>了解更多 <span>→</span></a>
+        </div>
+      </article>
+      <article class="model-card tilt">
+        <div class="model-photo"><img src="assets/img/model-gls.jpg" alt="迈巴赫 GLS 600"><span class="model-tag">V8 · 礼乐之座</span></div>
+        <div class="model-info">
+          <h3>迈巴赫 GLS 600 4MATIC</h3>
+          <ul class="model-specs"><li><span>4.0T V8</span><b>557 PS</b></li><li><span>0–100 km/h</span><b>4.9 s</b></li></ul>
+          <p class="model-price">¥ 2,488,000 起</p>
+          <a class="model-link" href="#specs" data-lenis>了解更多 <span>→</span></a>
+        </div>
+      </article>
+      <article class="model-card tilt">
+        <div class="model-photo"><img src="assets/img/model-eqs.jpg" alt="迈巴赫 EQS 680"><span class="model-tag">纯电 · 新纪元</span></div>
+        <div class="model-info">
+          <h3>迈巴赫 EQS 680 礼逸版</h3>
+          <ul class="model-specs"><li><span>双电机四驱</span><b>658 PS</b></li><li><span>0–100 km/h</span><b>4.4 s</b></li></ul>
+          <p class="model-price">¥ 1,486,000 起</p>
+          <a class="model-link" href="#specs" data-lenis>了解更多 <span>→</span></a>
+        </div>
+      </article>
+      <article class="model-card tilt">
+        <div class="model-photo"><img src="assets/img/s580-green.jpg" alt="迈巴赫 S 580"><span class="model-tag">V8 · 从容之道</span></div>
+        <div class="model-info">
+          <h3>迈巴赫 S 580 4MATIC</h3>
+          <ul class="model-specs"><li><span>4.0T V8</span><b>503 PS</b></li><li><span>0–100 km/h</span><b>4.9 s</b></li></ul>
+          <p class="model-price">¥ 2,500,000 级起</p>
+          <a class="model-link" href="#specs" data-lenis>了解更多 <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 3D 展厅 ═══════════ -->
+<section class="section showroom" id="showroom">
+  <div class="container">
+    <header class="section-head center">
+      <p class="eyebrow">05 —— 3D 展厅</p>
+      <h2>绕车细赏<br><span class="gold-text">拖动观看</span></h2>
+      <p class="specs-note">按住并拖动，360° 环视 · 滚轮拉近</p>
+    </header>
+    <div class="viewer" id="viewer" data-lenis-prevent>
+      <canvas id="viewerCanvas"></canvas>
+      <div class="viewer-loading" id="viewerLoading">载入 3D 模型…</div>
+      <div class="viewer-hint" id="viewerHint">↔ 拖动旋转</div>
+    </div>
+    <p class="viewer-note">3D 车型为程序化建模示意（曜岩黑金属漆 · 直瀑式格栅 · 双色金线）</p>
+  </div>
+</section>
+
+<!-- ═══════════ 参数 ═══════════ -->
+<section class="section specs" id="specs">
+  <div class="container">
+    <header class="section-head center">
+      <p class="eyebrow">06 —— 参数</p>
+      <h2>迈巴赫 S 680 4MATIC</h2>
+      <p class="specs-note">数字之下，是不动声色的力量。</p>
+    </header>
+    <div class="spec-grid" id="specGrid">
+      <div class="spec-cell"><span class="spec-value" data-count="612">0</span><span class="spec-unit">最大功率 PS</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="900">0</span><span class="spec-unit">峰值扭矩 N·m</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="4.5" data-decimals="1">0</span><span class="spec-unit">0–100 km/h 加速 s</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="5470">0</span><span class="spec-unit">车长 mm</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="3396">0</span><span class="spec-unit">轴距 mm</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="6.0" data-decimals="1">0</span><span class="spec-unit">排量 L · V12</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="4" data-suffix="MATIC">0</span><span class="spec-unit">全时四驱</span></div>
+      <div class="spec-cell"><span class="spec-value" data-count="9" data-suffix="G-TRONIC">0</span><span class="spec-unit">自动变速器</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 定制 ═══════════ -->
+<section class="section bespoke" id="bespoke">
+  <div class="container">
+    <header class="section-head center">
+      <p class="eyebrow">07 —— 定制</p>
+      <h2>以你之名<br><span class="gold-text">定制传奇</span></h2>
+      <p class="specs-note">MANUFAKTUR 匠心高定 —— 双色车身、专属车漆、手工缝线，皆为可定制的至臻细节。</p>
+    </header>
+    <div class="bespoke-grid">
+      <div class="bespoke-car">
+        <div class="bespoke-photo">
+          <img src="assets/img/hero-dark.jpg" alt="迈巴赫 S 680 曜岩黑">
+          <div class="paint-veil"></div>
+        </div>
+        <p class="paint-name">曜岩黑 · Obsidian Black</p>
+      </div>
+      <ul class="feature-list bespoke-list">
+        <li><span class="f-num">01</span><div><h4>双色车身</h4><p>曜岩黑、卡拉哈里金、月光蓝、钻石白、玫瑰金，任意两色手工喷涂。</p></div></li>
+        <li><span class="f-num">02</span><div><h4>内饰皮革</h4><p>Nappa 半苯胺真皮，数十种配色与缝线方案随心搭配。</p></div></li>
+        <li><span class="f-num">03</span><div><h4>专属徽记</h4><p>头枕刺绣、门槛饰板镌刻您的姓名或专属字样。</p></div></li>
+        <li><span class="f-num">04</span><div><h4>轮毂饰件</h4><p>专属多辐轮毂与玫瑰金细节，按您的心意定制。</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 预约 ═══════════ -->
+<section class="section reserve" id="reserve">
+  <div class="reserve-bg" aria-hidden="true"><img src="assets/img/story-eqs.jpg" alt=""></div>
+  <div class="reserve-veil"></div>
+  <div class="container reserve-inner">
+    <p class="eyebrow">08 —— 静候</p>
+    <h2>静候<br><span class="gold-text">莅临</span></h2>
+    <p class="lead">前往梅赛德斯-迈巴赫官方网站，预约您的私享品鉴之旅。专属顾问将如约而至，为您讲述每一处细节背后的光阴。</p>
+    <a class="btn btn-gold btn-lg magnetic" href="https://www.mercedes-benz.com.cn/vehicles/sedan/maybach-s-class.html" target="_blank" rel="noopener">前往官网预约</a>
+    <p class="reserve-note">本页面为设计演示作品，与梅赛德斯-奔驰及梅赛德斯-迈巴赫官方无关联。</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ 页脚 ═══════════ -->
+<footer class="site-foot">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M6 20 L6 46 M6 46 L22 28 M38 28 L22 28 M38 28 L38 46 M54 20 L54 46 M54 46 L38 28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+        <path d="M11 20 L11 46 M11 46 L27 28 M43 28 L27 28 M43 28 L43 46 M59 20 L59 46 M59 46 L43 28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+      </svg>
+      <p>梅赛德斯-迈巴赫<br><span>至臻豪华 · 礼待天下</span></p>
+    </div>
+    <nav class="foot-nav" aria-label="页脚导航">
+      <div><h5>车型</h5><a href="#models" data-lenis>迈巴赫 S 级</a><a href="#models" data-lenis>迈巴赫 GLS</a><a href="#models" data-lenis>迈巴赫 EQS SUV</a></div>
+      <div><h5>品牌</h5><a href="#heritage" data-lenis>百年传承</a><a href="#craft" data-lenis>匠心工艺</a><a href="#bespoke" data-lenis>匠心高定</a></div>
+      <div><h5>联系</h5><a href="https://www.mercedes-benz.com.cn/vehicles/sedan/maybach-s-class.html" target="_blank" rel="noopener">官方预约</a><a href="#top" data-lenis>返回顶部</a></div>
+    </nav>
+  </div>
+  <div class="container foot-bottom">
+    <p>© 2026 设计演示作品 · 灵感致敬 Mercedes-Maybach · The Ultimate in Luxury</p>
+    <p class="foot-en">CRAFTED WITH OBSIDIAN &amp; CHAMPAGNE GOLD</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/SplitText.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="vendor/three.min.js"></script>
+<script src="vendor/GLTFLoader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
