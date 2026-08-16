@@ -822,18 +822,13 @@
 
     function loadRealModel() {
       if (typeof THREE.GLTFLoader === "undefined") { fallbackProcedural("3D 加载器不可用，显示示意模型"); return; }
-      var parts = ["assets/models/maybach2022.p0.gz", "assets/models/maybach2022.p1.gz"];
-      Promise.all(parts.map(function (p) {
-        return fetch(p).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.arrayBuffer(); });
-      }))
-        .then(function (arrs) {
-          var total = 0;
-          arrs.forEach(function (a) { total += a.byteLength; });
-          var merged = new Uint8Array(total);
-          var off = 0;
-          arrs.forEach(function (a) { merged.set(new Uint8Array(a), off); off += a.byteLength; });
+      fetch("assets/models/maybach2022.glb.gz")
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          var enc = (r.headers.get("Content-Encoding") || "").toLowerCase();
+          if (enc.indexOf("gzip") !== -1) return r.arrayBuffer(); /* 服务器已自动解压 */
           if (typeof DecompressionStream === "undefined") throw new Error("no-gunzip");
-          return new Response(new Response(merged).body.pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
+          return new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
         })
         .then(function (buf) {
           return new Promise(function (resolve, reject) {
